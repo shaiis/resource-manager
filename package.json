@@ -1,0 +1,9 @@
+{
+  "name": "resource-manager",
+  "version": "0.0.0",
+  "main": "lib/resource.manager.js",
+  "dependencies": {
+    "underscore": "1.5.2",
+    "q": "~0.9.7"
+  }
+}
