@@ -1,6 +1,6 @@
 resource-manager
 ================
 
-Manage resource pull with promise
+Manage resource with promise
 
 In development - stable - no tests yet
