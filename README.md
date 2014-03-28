@@ -1,6 +1,3 @@
-Resource Manager 
-================
+## resource-manager
 
-Manage resource with promise
-
-
+Manage resource pull with promise
