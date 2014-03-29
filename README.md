@@ -32,7 +32,7 @@ If the retrieve of the resource fail, all the waiting promises are rejected. Cal
 Examlpe
 --------
 
-```sh
+```javascript
 function getDummyConnection() {
   var def = Q.defer();
   setTimeout(function() { def.resolve("Connection OK")}, 2000);
