@@ -1,5 +1,16 @@
 {
   "name": "resource-manager",
+  "description": "Manage resource cache with promise",
+  "keywords": [
+    "resource-manager",
+    "resource",
+    "manager",
+    "cache"
+  ],
+  "author": {
+    "name": "Shai Israel",
+    "email": "shaiis.com@gmail.com"
+  },
   "version": "1.0.0",
   "main": "lib/resource.manager.js",
   "scripts": {
