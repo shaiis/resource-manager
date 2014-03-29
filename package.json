@@ -11,7 +11,7 @@
     "name": "Shai Israel",
     "email": "shaiis.com@gmail.com"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/resource.manager.js",
   "scripts": {
     "test": "mocha tests/** -r blanket -R travis-cov",
