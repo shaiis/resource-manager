@@ -3,13 +3,11 @@ Resource Manager
 
 Resource Manager - manage cached resource with promise.
 
------
 
 Motivation
 -----------
 Lets say you have a function that opens and retreive a conneciton, and you want bunch of stuff to work with the connection when it's ready. In normal cases you need to wait until the connection is ready and then continue with your flow, but with Resource Manager you can get the "resource" connection any time - it will be served to you when it's ready (with Q promise).
 
--------
 
 Installation
 --------------
@@ -17,7 +15,7 @@ Installation
 ```sh
 npm install resource-manager
 ```
------
+
 API
 ----
 ####ResourceManager(resourceRetrieverFunction, timeout, retry)
@@ -31,7 +29,6 @@ API
 return a cached resource, if the resource is not ready add the waiting promise to a queue to be resolved when the resource is received.
 If the retrieve of the resource fail, all the waiting promises are rejected. Calling this function after 'error' state will cause another try of getting the resource if retry is true. Calling the function after reource is ready return the cached resource as fulfilled promise
 
---------
 Examlpe
 --------
 
@@ -54,7 +51,7 @@ resourceManager.getResource().
   });
 ```
 
-------
+
 License
 ----
 
