@@ -26,6 +26,6 @@
       "pattern": "/lib/",
       "data-cover-never": "node_modules"
     },
-    "travis-cov": { "threshold": 99 }
+    "travis-cov": { "threshold": 85 }
   }
 }
