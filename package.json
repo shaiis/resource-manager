@@ -1,13 +1,25 @@
 {
   "name": "resource-manager",
-  "version": "1.0.0",
+  "description": "Manage resource cache with promise",
+  "keywords": [
+    "resource-manager",
+    "resource",
+    "manager",
+    "cache"
+  ],
+  "author": {
+    "name": "Shai Israel",
+    "email": "shaiis.com@gmail.com"
+  },
+  "version": "1.0.1",
   "main": "lib/resource.manager.js",
   "scripts": {
-    "test": "mocha tests/**"
+    "test": "mocha tests/** -r blanket -R travis-cov",
+    "testcovhtml": "mocha tests/** -r blanket -R html-cov > coverage.html"
   },
-  "repository" :
-  { "type" : "git"
-    , "url" : "https://github.com/shaiis/resource-manager"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shaiis/resource-manager"
   },
   "dependencies": {
     "underscore": "1.5.2",
@@ -16,6 +28,15 @@
   "devDependencies": {
     "mocha": "1.18.0",
     "chai": "1.8.0",
-    "chai-as-promised": "4.1.1"
+    "chai-as-promised": "4.1.1",
+    "blanket": "^1.1.6",
+    "travis-cov": "^0.2.5"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "/lib/",
+      "data-cover-never": "node_modules"
+    },
+    "travis-cov": { "threshold": 85 }
   }
 }

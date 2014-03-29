@@ -85,4 +85,9 @@ describe('ResourceManager Test', function(){
       resourceManager.getResource()
     ).should.be.rejected;
   })
+
+  it('getTimeout check', function() {
+    var resourceManager = new ResourceManager(getSomething.bind(this,100),50,false);
+    resourceManager.getTimeout().should.be.equal(50);
+  })
 })

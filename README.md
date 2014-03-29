@@ -1,3 +1,3 @@
 ## resource-manager
 
-Manage resource pull with promise
+Manage resource cache with promise
